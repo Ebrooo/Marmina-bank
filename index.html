@@ -157,7 +157,7 @@ window.__ready.then(init);
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {getAuth,onAuthStateChanged,signInWithEmailAndPassword,signOut} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {getFirestore,collection,doc,onSnapshot,addDoc,setDoc,updateDoc,deleteDoc,getDoc} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-const firebaseConfig={apiKey:"AIzaSyCoyYETJCP00s91-gvF1fjbil5DDOC8PWI",authDomain:"marmina-khodam.firebaseapp.com",projectId:"marmina-khodam",appId:"1:226402499323:web:1ab6dc05c1d2c5b95c8e5e"};
+const firebaseConfig={apiKey:"AIzaSyDidFEwbxrTwNnuMaNJHP7KfqiOwomh9lk",authDomain:"marmina-bank.firebaseapp.com",projectId:"marmina-bank",appId:"1:195488300027:web:ff8ee0a1f05c6aa9c1e95e"};
 const A=document.getElementById("app"),g=i=>document.getElementById(i),isKid=/^#k-[a-z0-9]+$/.test(location.hash);
 const app=initializeApp(firebaseConfig),auth=getAuth(app),fs=getFirestore(app);
 const dbs={collection:n=>({onSnapshot:(cb,er)=>onSnapshot(collection(fs,n),s=>cb({docs:s.docs}),er),add:o=>addDoc(collection(fs,n),o)}),
